@@ -132,3 +132,44 @@ h2 {
   border-bottom: hsl(7, 99%, 70%) 5px solid;
   margin-bottom: 0px;
 }
+.article-textbox-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.cherry-img {
+  background-image: url(images/desktop/image-graphic-design.jpg);
+  background-position: center top;
+  background-size: cover;
+}
+.orange-img {
+  background-image: url(images/desktop/image-photography.jpg);
+  background-position: center top;
+  background-size: cover;
+}
+.orange-img h3,
+.orange-img .textbox-img-p {
+  color: hsl(198, 62%, 26%);
+}
+
+.cherry-img h3,
+.cherry-img .textbox-img-p {
+  color: hsl(167, 40%, 24%);
+}
+
+h3 {
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  padding: 10px 30px;
+  margin-top: 350px;
+}
+.textbox-img-p {
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  padding: 0 30px;
+  margin: 20px 100px;
+}
