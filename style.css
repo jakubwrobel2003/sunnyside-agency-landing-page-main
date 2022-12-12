@@ -2,20 +2,6 @@
 
 ### Primary
 
-- Soft red: hsl(7, 99%, 70%)
-- Yellow: hsl(51, 100%, 49%)
-- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
-- Dark blue (photography text): hsl(198, 62%, 26%)
-- Dark moderate cyan (footer): hsl(168, 34%, 41%)
-
-### Neutral
-
-- Very dark desaturated blue: hsl(212, 27%, 19%)
-- Very dark grayish blue: hsl(213, 9%, 39%)
-- Dark grayish blue: hsl(232, 10%, 55%)
-- Grayish blue: hsl(210, 4%, 67%)
-- White: hsl(0, 0%, 100%)
-
 ## Typography
 
 ### Body Copy
@@ -46,7 +32,9 @@ font-family: 'Fraunces', serif;
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  overflow-x: hidden;
+}
 header {
   background-image: url(images/desktop/image-header.jpg);
   background-position: center bottom;
@@ -62,12 +50,12 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-ol {
+.nav-ol {
   list-style-type: none;
   display: flex;
   justify-content: center;
 }
-li {
+.nav-li {
   font-size: 18px;
   padding: 10px 20px;
   margin: 5px;
@@ -76,8 +64,8 @@ li {
   color: hsl(0, 0%, 100%);
   cursor: pointer;
 }
-li:active,
-li:hover {
+.nav-li:active,
+.nav-li:hover {
   background-color: hsl(198, 100%, 80%);
   border-radius: 500px;
 }
@@ -173,3 +161,104 @@ h3 {
   padding: 0 30px;
   margin: 20px 100px;
 }
+.testimonial-section {
+  padding: 30px;
+  margin-bottom: 100px;
+}
+h4 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.tesimonial-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+.tesimonial-box {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tesimonial-box-img {
+  width: 64px;
+  border-radius: 500px;
+  margin-bottom: 30px;
+}
+.tesimonial-box-main-text {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  line-height: 1.7;
+  padding: 26px;
+  color: hsl(213, 9%, 39%);
+}
+.tesimonial-box-name {
+  font-weight: 900;
+  padding: 10px;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+}
+.tesimonial-box-position {
+  color: hsl(213, 9%, 39%);
+}
+.galery-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.galery-section img {
+  width: 100%;
+}
+footer {
+  background-color: hsl(168, 44%, 55%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px 0 0;
+}
+.logo-footer {
+  fill: hsl(167, 40%, 24%);
+}
+.footer-nav {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  color: hsl(167, 40%, 24%);
+  margin: 20px 20px 00px 20px;
+}
+.footer-nav li {
+  padding: 30px;
+  cursor: pointer;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  color: hsl(167, 40%, 24%);
+  margin: 20px;
+}
+.footer-link li {
+  margin: 20px 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.color:hover,
+.footer-nav li:hover {
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  fill: rgb(255, 255, 255);
+}
+/* 
+ */
