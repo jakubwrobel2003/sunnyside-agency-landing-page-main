@@ -45,10 +45,11 @@ header {
   flex-direction: column;
 }
 nav {
-  width: 1440px;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 .nav-ol {
   list-style-type: none;
